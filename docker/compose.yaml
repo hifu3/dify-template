@@ -7,7 +7,7 @@ services:
     restart: always
     environment:
       DOMAINS: "${DOMAIN} -> http://nginx:8080"
-      # STAGE: 'production' # Don't use production until staging works
+      STAGE: 'production' # Don't use production until staging works
       # FORCE_RENEW: 'true'
     volumes:
       - ./volumes/https-portal/data:/var/lib/https-portal
