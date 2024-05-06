@@ -6,7 +6,7 @@ services:
       - '443:443'
     restart: always
     environment:
-      DOMAINS: "${DOMAIN} -> http://nginx:8080"
+      DOMAINS: "${DOMAIN} -> http://nginx:80"
       STAGE: 'production' # Don't use production until staging works
       # FORCE_RENEW: 'true'
     volumes:
