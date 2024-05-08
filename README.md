@@ -33,6 +33,8 @@ SSL証明書はこの後にdockerで立ち上げるhttps-portalのコンテナ�
 
 ### difyインストール
 .envは必要に応じて編集する。
+DOMAINは必ず上の項目で設定したドメインにする。
+パスワードは適宜変更、シークレットキーは`openssl rand -base64 42`で生成する。
 
 ```bash
 cd docker
